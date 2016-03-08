@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/checkCurrentEnvironment', function () {
+    echo App::environment();
+});
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
