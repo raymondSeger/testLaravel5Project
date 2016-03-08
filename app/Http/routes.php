@@ -19,6 +19,10 @@ Route::get('/checkCurrentEnvironment', function () {
     echo App::environment();
 });
 
+Route::get('/getEnvData', function () {
+    echo env('PROJECT_NAME');
+});
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
